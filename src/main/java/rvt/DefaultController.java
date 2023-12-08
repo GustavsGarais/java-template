@@ -12,4 +12,15 @@ public class DefaultController {
     String index(@RequestParam(name="name", required=false, defaultValue="null") String name, Model model) {
         return "index";
     }
+
+    @GetMapping(value = "/about")
+    String aboutMeAction(Model model) {
+        String name = "";
+        String surname = "";
+        int age = 0;
+        String group = "DP2-1";
+        model.addAttribute(surname, group);
+
+        return "about";
+    }
 }
