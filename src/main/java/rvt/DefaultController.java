@@ -16,11 +16,14 @@ public class DefaultController {
 
     @GetMapping(value = "/about")
     ModelAndView about() {
-        ModelAndView modelAndView = new ModelAndView(viewName:"about");
+        CsvManager manager = new CsvManager("data/hobbies.csv");
 
-        int age = 20;
+        List hobbies = manager.getAllHobbies();
+        
+        ModelAndView modelAndView = new ModelAndView("about");
+        modelAndView.addObject("hobbies", hobbies);
 
-        modelAndView.addObject("age", age)
+        return modelAndView;
     }
     /*
     String aboutMeAction(Model model) {
