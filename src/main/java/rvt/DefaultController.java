@@ -15,28 +15,21 @@ public class DefaultController {
     }
 
     @GetMapping(value = "/about")
-    ModelAndView about() {
-        CsvManager manager = new CsvManager("data/hobbies.csv");
-
-        List hobbies = manager.getAllHobbies();
-        
+    ModelAndView about(@RequestParam MashMap<String, String<queryStringallParams){
         ModelAndView modelAndView = new ModelAndView("about");
-        modelAndView.addObject("hobbies", hobbies);
+
+        String id = queryStringallParams.get("id");
+        String tittle = queryStringallParams.get("tittle");
+        String description = queryStringallParams.get("description");
+
+        CsvManager manager = new CsvManager(CsvManager.hobbies_csv);
+        manager.addHobbyToCSV(id, tittle, description);
+
+        // turpinat veidot html formu
 
         return modelAndView;
     }
-    /*
-    String aboutMeAction(Model model) {
-        String name = "";
-        String surname = "";
-        int age = 0;
-        String group = "DP2-1";
-        model.addAttribute("age");
-
-        return "about";
-    } */
-
-    
-
-    
 }
+
+    
+

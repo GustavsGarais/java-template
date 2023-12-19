@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <LINK> rel ="stylesheet" </LINK>
-    <script> src="/javascript/main.js"defer</script>
+    <script> src="/javascript/main.js"</script>
     <title>About Me</title>
 </head>
 <body>
@@ -32,5 +32,10 @@
         <li>Roltoni</li>
     </ol>
     
+</body>
+<body>
+    <h3>About lapa!</h3>
+    <h3 th:text= "'Sveiks, tevi sauc - ' + ${param.name}"></h3>
+    <p th:text="'Tavs vecums ir: ' + ${paran.age}"></p>
 </body>
 </html>
