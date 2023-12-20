@@ -2,7 +2,6 @@ package rvt;
 
 public class Hobby {
     private int id;
-
     private String title;
     private String description;
 
@@ -11,7 +10,13 @@ public class Hobby {
         this.title = title;
         this.description = description;
     }
-    public int getId() {}
-    public String getTittle() {}
-    public String getDescription() {}
+    public int getId() {
+        return this.id;
+    }
+    public String getTittle() {
+        return this.title;
+    }
+    public String getDescription() {
+        return this.description;
+    }
 }
