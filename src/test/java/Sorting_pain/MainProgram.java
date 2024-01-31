@@ -1,4 +1,4 @@
-package lv.rvt;
+package Sorting_pain;
 
 public class MainProgram {
 

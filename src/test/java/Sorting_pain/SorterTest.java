@@ -1,8 +1,8 @@
-package lv.rvt;
+package Sorting_pain;
 import java.util.Arrays;
 
-public abstract class Sorted {
-    private static void smallest(int[] array) {
+public class SorterTest {
+    public static void smallest(int[] array) {
         int[] number = {6, 5, 8, 7, 1};
         System.out.println("Smallest: " + MainProgram.smallest(number));
 
