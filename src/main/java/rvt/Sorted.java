@@ -26,7 +26,7 @@ public class Sorted {
         return 0;
 
     }
-/*
+
     // Part 3: Index of the smallest value after a certain value
     public static int IndexOfSmallestFrom(int[] table, int startIndex) {
         
@@ -36,7 +36,7 @@ public class Sorted {
     public static void swap(int[] array, int index1, int index2) {
       
     }
-*/
+
     // Part 5: Sorting
     public static int sort(int[] array, int searched){
         for (int i = 0; i < array.length; i++) {

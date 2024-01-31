@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import rvt.Sorted;
 
-public class SorterTest {
+public class SortedTest {
     @Test
     public void testSmallest() {
 
@@ -30,8 +30,9 @@ public class SorterTest {
         System.out.println(0);
         System.out.println(1);
         System.out.println(2);
-
     }
+
+    
     @Test
     // Part 5: Sorting
     public void sort(int[] array, int searched){
