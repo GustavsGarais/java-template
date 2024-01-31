@@ -5,16 +5,17 @@ import org.junit.runner.manipulation.Sorter;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
+import java.util.Arrays;
+
 public abstract class SorterTest {
     @Test
-    public static void TestSmallest(int[] array) {
-        int[] intArray = {6, 5, 8, 7, 1};
-        for ( int i = 0; i < intArray.length; i++){
-            int indexOfSmallest = indexOfSmallest(intArray, i);
-            swap(array, i, indexOfSmallest);
-            
-            System.out.println(Arrays.toString(intArray));
+    public static int indexOfSmallest(int[] array){
+        int[] numbers = {6, 5, 8, 7, 11};
+        System.out.println("Index of the smallest number: " + MainProgram.indexOfSmallest(numbers));
+        for ( int i = 0; i < numbers.length; i++){
+            int indexOfSmallest = indexOfSmallest(numbers);
+            Arrays.sort(numbers, i, indexOfSmallest);
         }
-
+        return 0;
     }
 }
