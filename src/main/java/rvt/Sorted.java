@@ -30,10 +30,6 @@ public class Sorted {
     // Part 3: Index of the smallest value after a certain value
     public static int IndexOfSmallestFrom(int[] table, int startIndex) {
         
-    }
-
-    // Part 4: Swapping numbers
-    public static void swap(int[] array, int index1, int index2) {
       
     }
 
